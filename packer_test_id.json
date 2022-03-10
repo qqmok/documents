@@ -1,0 +1,11 @@
+{
+  "builders":
+  [{
+    "type": "openstack",
+    "image_name": "Test Image Ubuntu20 with filter",
+    "source_iamge": "INSERT IMAGE ID HERE",
+    "networks": "INSERT NETWORK HERE",
+    "flavor": "de.NBI tiny",
+    "ssh_username": "ubuntu",
+  }]
+}
