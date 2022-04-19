@@ -16,11 +16,10 @@
     "networks": "70c155a3-d2df-4373-bc7a-81b9cbf4cd49",
     "flavor": "de.NBI tiny",
     "ssh_username": "ubuntu",
-  }]
-  
+  }],
   "provisioners":
   [{
     "type": "ansible",
-    "playbook_file": "./ansible_test.yml"
+    "playbook_file": "./ansible_test.yml",
   }]
 }
