@@ -1,0 +1,20 @@
+{
+  "builders":
+  [{
+    "type": "openstack",
+    "image_name": "Test Image with Production Runner",
+    "source_image_filter": {
+      "filters": {
+        "tags": ["portalclient"],
+        "properties": {
+          "os_distro": "ubuntu",
+          "os_version": "2004"
+        }
+      },
+      "most_recent": true
+    },
+    "networks": "70c155a3-d2df-4373-bc7a-81b9cbf4cd49",
+    "flavor": "de.NBI tiny",
+    "ssh_username": "ubuntu",
+  }]
+}
