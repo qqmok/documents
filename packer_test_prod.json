@@ -21,5 +21,6 @@
   [{
     "type": "ansible",
     "playbook_file": "./ansible_test.yml",
+    "extra_arguments": ["-vvvv"]
   }]
 }
