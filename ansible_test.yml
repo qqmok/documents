@@ -1,0 +1,11 @@
+- name: Test provisioning with ansible
+  hosts: all
+  become: yes
+  connection: paramiko_ssh
+  gather_facts: yes
+  
+  tasks:
+    - name: Update apt cache
+      apt:
+        update_cache: true
+      become: yes
